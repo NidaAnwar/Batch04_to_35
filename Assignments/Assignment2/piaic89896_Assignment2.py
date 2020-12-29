@@ -312,7 +312,7 @@ def function18():
     # count values of "students" are exist in "piaic"
     piaic = np.arange(100)
     students = np.array([5,20,50,200,301,7001])
-    x = np.count_nonzero(students)
+    x = piaic[np.in1d(piaic,students)].size
     return x
 
     #Expected output: 3
